@@ -36,7 +36,7 @@ public struct AnyDecodable: Decodable {
     }
 }
 
-protocol _AnyDecodable {
+public protocol _AnyDecodable {
     var value: Any { get }
     init<T>(_ value: T?)
 }
