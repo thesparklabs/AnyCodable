@@ -34,7 +34,7 @@ public struct AnyEncodable: Encodable {
     }
 }
 
-protocol _AnyEncodable {
+public protocol _AnyEncodable {
     var value: Any { get }
     init<T>(_ value: T?)
 }
